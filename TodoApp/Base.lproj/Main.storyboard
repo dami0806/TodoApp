@@ -112,21 +112,24 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rLR-mc-iRo"/>
+                    <connections>
+                        <segue destination="xaV-7k-Bod" kind="show" identifier="ToDoCell" id="GCa-dc-WLc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="65.625"/>
         </scene>
-        <!--Title-->
+        <!--Detail View Controller-->
         <scene sceneID="eOO-cx-hIP">
             <objects>
-                <viewController id="xaV-7k-Bod" sceneMemberID="viewController">
+                <viewController id="xaV-7k-Bod" customClass="DetailViewController" customModule="TodoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Du0-3X-qnA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="t5h-Vb-8cx">
-                                <rect key="frame" x="25" y="64" width="364" height="35"/>
+                                <rect key="frame" x="25" y="160" width="364" height="35"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I12-z0-YjE">
                                         <rect key="frame" x="0.0" y="0.0" width="169" height="35"/>
@@ -158,10 +161,10 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OEP-v4-B0e">
-                                <rect key="frame" x="30" y="139" width="364" height="200"/>
+                                <rect key="frame" x="30" y="235" width="364" height="200"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="x5u-gD-bU1">
-                                        <rect key="frame" x="15" y="8" width="334" height="184"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="x5u-gD-bU1">
+                                        <rect key="frame" x="15" y="8" width="334" height="112"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" systemColor="labelColor"/>
@@ -179,7 +182,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6S-dQ-ujA">
-                                <rect key="frame" x="20" y="379" width="364" height="40"/>
+                                <rect key="frame" x="20" y="475" width="364" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="LVt-NT-cNg"/>
                                 </constraints>
@@ -197,7 +200,7 @@
                             <constraint firstItem="t5h-Vb-8cx" firstAttribute="leading" secondItem="eVh-D6-K2B" secondAttribute="leading" constant="25" id="wGa-4O-U0a"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="Gdw-dM-JIp"/>
+                    <navigationItem key="navigationItem" id="edL-f2-bm4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SQC-rU-mW5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
