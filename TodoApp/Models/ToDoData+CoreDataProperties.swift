@@ -5,7 +5,6 @@
 //  Created by 박다미 on 2023/01/05.
 //
 //
-
 import Foundation
 import CoreData
 
@@ -16,10 +15,17 @@ extension ToDoData {
         return NSFetchRequest<ToDoData>(entityName: "ToDoData")
     }
 
-    @NSManaged public var color: Int64
-    @NSManaged public var date: String?
     @NSManaged public var memoText: String?
+    @NSManaged public var date: Date?
+    @NSManaged public var color: Int64
 
+    var dateString: String? {
+        let myFormatter = DateFormatter()
+        myFormatter.dateFormat = "yyyy-MM-dd"
+        guard let date = self.date else { return "" }
+        let savedDateString = myFormatter.string(from: date)
+        return savedDateString
+    }
 }
 
 extension ToDoData : Identifiable {
