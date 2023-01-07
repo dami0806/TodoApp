@@ -42,5 +42,18 @@ enum MyColor: Int64 {
             return UIColor(red: 118/255, green: 103/255, blue: 228/255, alpha: 1)
         }
     }
+    var buttonTextColor: UIColor {
+        switch self {
+        case .red:
+            return UIColor(red: 232/255, green: 163/255, blue: 153/255, alpha: 1)
+        case .green:
+            return UIColor(red: 89/255, green: 190/255, blue: 183/255, alpha: 1)
+        case .blue:
+            return UIColor(red: 88/255, green: 181/255, blue: 236/255, alpha: 1)
+        case .purple:
+            return UIColor(red: 118/255, green: 103/255, blue: 228/255, alpha: 1)
+        }
+    }
+    
     
 }
