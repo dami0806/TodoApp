@@ -14,7 +14,7 @@ final class ToDoCell: UITableViewCell {
     @IBOutlet weak var toDoTextLabel: UILabel!
     @IBOutlet weak var dateTextLabel: UILabel!
     @IBOutlet weak var updateButton: UIButton!
-    
+    @IBOutlet weak var deleteButton: UIButton!
     
     // ToDoData를 전달받을 변수 (전달 받으면 ==> 표시하는 메서드 실행) ⭐️
     var toDoData: ToDoData? {
@@ -31,6 +31,10 @@ final class ToDoCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         configureUI()
+        deleteCell()
+    }
+    func deleteCell(){
+        print("삭제")
     }
     
     // 기본 UI
@@ -50,6 +54,7 @@ final class ToDoCell: UITableViewCell {
         let color = MyColor(rawValue: colorNum) ?? .red
         updateButton.backgroundColor = color.buttonColor
         backgoundView.backgroundColor = color.backgoundColor
+        deleteButton.tintColor = color.buttonColor
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

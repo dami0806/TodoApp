@@ -121,6 +121,7 @@ class DetailViewController: UIViewController {
         case 1:
             redButton.backgroundColor = MyColor.red.buttonColor
             redButton.setTitleColor(.white, for: .normal)
+            
         case 2:
             greenButton.backgroundColor = MyColor.green.buttonColor
             greenButton.setTitleColor(.white, for: .normal)
@@ -133,6 +134,7 @@ class DetailViewController: UIViewController {
         default:
             redButton.backgroundColor = MyColor.red.buttonColor
             redButton.setTitleColor(.white, for: .normal)
+            
         }
     }
     
