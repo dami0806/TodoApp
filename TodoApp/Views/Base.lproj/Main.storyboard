@@ -88,31 +88,17 @@
                                                         <constraint firstAttribute="bottom" secondItem="jvY-yD-gQZ" secondAttribute="bottom" constant="10" id="itw-hN-ldo"/>
                                                     </constraints>
                                                 </view>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWw-Zm-CB3">
-                                                    <rect key="frame" x="359" y="21" width="30" height="30"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="RD4-XI-y4I"/>
-                                                        <constraint firstAttribute="width" constant="30" id="TPc-pp-AwU"/>
-                                                    </constraints>
-                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal" image="x.square" catalog="system"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="x.square" catalog="system" title=""/>
-                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="RBf-kH-oNU" firstAttribute="top" secondItem="aNx-Ko-OZy" secondAttribute="topMargin" constant="10" id="AR1-jI-px5"/>
-                                                <constraint firstItem="aWw-Zm-CB3" firstAttribute="top" secondItem="RBf-kH-oNU" secondAttribute="top" id="B9D-Oh-Kih"/>
                                                 <constraint firstItem="RBf-kH-oNU" firstAttribute="leading" secondItem="aNx-Ko-OZy" secondAttribute="leading" constant="25" id="KfO-zS-1Ud"/>
                                                 <constraint firstAttribute="trailing" secondItem="RBf-kH-oNU" secondAttribute="trailing" constant="25" id="Vo2-jS-NYK"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="RBf-kH-oNU" secondAttribute="bottom" constant="10" id="iyV-tf-uOL"/>
-                                                <constraint firstItem="RBf-kH-oNU" firstAttribute="trailing" secondItem="aWw-Zm-CB3" secondAttribute="trailing" id="pn4-xy-czJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="backgoundView" destination="RBf-kH-oNU" id="VLo-w4-aXg"/>
                                             <outlet property="dateTextLabel" destination="Odm-H5-rlz" id="YFW-3Y-yT9"/>
-                                            <outlet property="deleteButton" destination="aWw-Zm-CB3" id="1nQ-fv-bAy"/>
                                             <outlet property="toDoTextLabel" destination="kvV-op-rM6" id="JTE-Lb-m6r"/>
                                             <outlet property="updateButton" destination="6Ly-rZ-Mu2" id="p34-5z-aTz"/>
                                         </connections>
@@ -278,7 +264,6 @@
     </scenes>
     <resources>
         <image name="pencil.tip" catalog="system" width="99" height="128"/>
-        <image name="x.square" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
